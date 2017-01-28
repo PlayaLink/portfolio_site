@@ -3,6 +3,8 @@ import React, { PropTypes } from 'react'
 
 
 // import "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+import "/public/assets/js/libs/jquery-1.9.1.min.js";
+import "/public/assets/js/libs/modernizr.min.js";
 // <script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.9.1.min.js">\x3C/script>')</script>
 import "/public/assets/js/libs/bootstrap.min.js"
 import "/public/assets/js/jquery.easing.1.3.min.js"
@@ -12,7 +14,10 @@ import "/public/assets/js/twitterFetcher_min.js"
 import "/public/assets/js/jquery.flexslider.min.js"
 import "/public/assets/js/jquery.fitvids.js"
 import "/public/assets/js/contact.js"
+
 import "/public/assets/js/scripts.js"
+// import "/public/assets/js/style-switcher.js"
+
 
 
 
@@ -688,7 +693,7 @@ class HomePage extends React.Component {
 
     						<div className="col-sm-6 col-md-5 scrollimation fade-right">
 
-    							<p className="lead">I am available for freelance. <br/>Can't wait for the next exciting project! Could it be yours?</p>
+    							<p className="lead">I am available for freelance. <br/>{"Can't wait for the next exciting project! Could it be yours?"}</p>
 
     							<p>
     								John Doe<br/>
@@ -709,26 +714,26 @@ class HomePage extends React.Component {
 
     						{/*=== Contact Form ===*/}
 
-    						<form id="contact-form" className="col-sm-6 col-md-offset-1 scrollimation fade-left" action="contact.php" method="post" novalidate>
+    						<form id="contact-form" className="col-sm-6 col-md-offset-1 scrollimation fade-left" action="contact.php" method="post">
 
     							<div className="form-group">
     								<div className="controls">
     									<input id="contact-name" name="contactName" className="form-control requiredField" type="text" data-error-empty="is required" />
-    									<label className="control-label" for="contact-name">Name</label>
+    									<label className="control-label" htmlFor="contact-name">Name</label>
     								</div>
     							</div>{/* End name input */}
 
     							<div className="form-group">
     								<div className="controls">
     									<input id="contact-mail" name="email" className="form-control requiredField" type="email" data-error-empty="is required" data-error-invalid="is invalid" />
-    									<label className="control-label" for="contact-mail">Email</label>
+    									<label className="control-label" htmlFor="contact-mail">Email</label>
     								</div>
     							</div>{/* End email input */}
 
     							<div className="form-group">
     								<div className="controls">
     									<textarea id="contact-message" name="comments" className="form-control requiredField" rows="6" data-error-empty="is required"></textarea>
-    									<label className="control-label" for="contact-message">Message</label>
+    									<label className="control-label" htmlFor="contact-message">Message</label>
     								</div>
     							</div>{/* End textarea */}
 
