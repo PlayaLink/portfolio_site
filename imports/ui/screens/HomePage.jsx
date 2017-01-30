@@ -2,10 +2,8 @@ import React, { PropTypes } from 'react'
 
 
 
-// import "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
 import "/public/assets/js/libs/jquery-1.9.1.min.js";
 import "/public/assets/js/libs/modernizr.min.js";
-// <script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.9.1.min.js">\x3C/script>')</script>
 import "/public/assets/js/libs/bootstrap.min.js"
 import "/public/assets/js/jquery.easing.1.3.min.js"
 import "/public/assets/js/waypoints.min.js"
@@ -44,21 +42,21 @@ class HomePage extends React.Component {
     					</button>
 
     					{/* ======= LOGO ========*/}
-    					<a className="navbar-brand scrollto" href="#home"><img src="assets/images/logo.png" alt="" /></a>
+    					<a className="navbar-brand scrollto" href="#home"><img src="" alt="" /></a>
 
     				</div>
 
     				<div id="site-nav" className="navbar-collapse collapse">
     					<ul className="nav navbar-nav navbar-right">
     						<li>
-    							<a href="#services" className="scrollto"><i className="fa fa-cog"></i>Specialties</a>
+    							<a href="#projects" className="scrollto"><i className="fa fa-desktop"></i>Code projects</a>
     						</li>
     						<li>
-    							<a href="#about" className="scrollto"><i className="fa fa-graduation-cap"></i>Profile</a>
+    							<a href="#portfolio" className="scrollto"><i className="fa fa-pencil"></i>Journalism</a>
     						</li>
-    						<li>
-    							<a href="#portfolio" className="scrollto"><i className="fa fa-briefcase"></i>Portfolio</a>
-    						</li>
+                <li>
+                  <a href="#about" className="scrollto"><i className="fa fa-commenting"></i>About</a>
+                </li>
     						<li>
     							<a href="#contact" className="scrollto"><i className="fa fa-envelope"></i>Contact</a>
     						</li>
@@ -80,8 +78,8 @@ class HomePage extends React.Component {
 
     					<div className="col-sm-10 col-sm-offset-1 text-center">
 
-    						<h1 className="scrollimation fade-down d1">I am Jonathan Doe</h1>
-    						<h2 className="scrollimation fade-down d3"><span className="main-color">D</span>esigner, <span className="main-color">D</span>eveloper, <span className="main-color">D</span>reamer</h2>
+    						<h1 className="scrollimation fade-down d1">Jordan England-Nelson</h1>
+    						<h2 className="scrollimation fade-down d3"><span className="main-color">D</span>eveloper | <span className="main-color">W</span>riter | <span className="main-color">R</span>esearcher</h2>
 
     					</div>
 
@@ -101,108 +99,13 @@ class HomePage extends React.Component {
     				<a href="#services" className="scrollto">Learn More</a>
     			</div>
 
-    			{/* ==============================================
-    			SERVICES
-    			=============================================== */}
-    			<section id="services" className="big-padding">
 
-    				<div className="container">
-
-    					<h1 className="section-title">My Services<span className="main-color">1</span></h1>
-
-    					<div className="text-center">
-    						<div className="btn-group">
-    							<button type="button" href="#front-end" className="btn btn-default toggle-tabs active">Front End</button>
-    							<button type="button" href="#back-end" className="btn btn-default toggle-tabs">Back End</button>
-    						</div>
-    					</div>
-
-    					<div className="tab-content">
-
-    						<div className="row tab-pane active" id="front-end">
-
-    							<div className="col-sm-4 service-item scrollimation fade-left">
-
-    								<div className="service-icon "><i className="fa fa-html5"></i></div>
-
-    								<h3>Clean HTML5 Code</h3>
-
-    								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
-
-
-    							</div>
-
-    							<div className="col-sm-4 service-item scrollimation fade-left">
-
-    								<div className="service-icon "><i className="fa fa-css3"></i></div>
-
-    								<h3>Modern CSS3 styles</h3>
-
-    								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
-
-
-    							</div>
-
-    							<div className="col-sm-4 service-item scrollimation fade-left">
-
-    								<div className="service-icon "><i className="fa fa-mobile"></i></div>
-
-    								<h3>Responsive Design</h3>
-
-    								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
-
-    							</div>
-
-    						</div>
-
-    						<div className="row tab-pane" id="back-end">
-
-    							<div className="col-sm-4 service-item">
-
-    								<div className="service-icon"><i className="fa fa-wordpress"></i></div>
-
-    								<h3>Wordpress</h3>
-
-    								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
-
-
-    							</div>
-
-    							<div className="col-sm-4 service-item">
-
-    								<div className="service-icon"><i className="fa fa-joomla"></i></div>
-
-    								<h3>Joomla</h3>
-
-    								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
-
-
-    							</div>
-
-    							<div className="col-sm-4 service-item">
-
-    								<div className="service-icon"><i className="fa fa-drupal"></i></div>
-
-    								<h3>Drupal</h3>
-
-    								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
-
-    							</div>
-
-    						</div>
-
-    					</div>
-
-    				</div>
-
-
-    			</section>
 
     			{/* ==============================================
     			LATEST PROJECTS
     			=============================================== */}
 
-    			<section className="big-padding gray-bg">
+    			<section id="projects" className="big-padding gray-bg">
 
     				<div className="container">
 
@@ -212,7 +115,7 @@ class HomePage extends React.Component {
 
     						<div className="col-sm-5 push-down scrollimation fade-right">
 
-    							<h2 className="row-title">Quattro - Agency Portfolio</h2>
+    							<h2 className="row-title">SpecialEd Goal Tracker</h2>
 
     							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lorem orci. Suspendisse posuere tincidunt dui vel tempus. Fusce ut vulputate ipsum, id sodales arcu. Praesent ultricies pretium sem, fermentum sagittis.</p>
 
@@ -222,7 +125,7 @@ class HomePage extends React.Component {
 
     						<div className="col-sm-6 col-sm-offset-1 scrollimation fade-left">
 
-    							<img className="img-responsive" src="assets/images/featured-2.png" alt="" />
+    							<img className="img-responsive" src="assets/images/login_facing_left.png" alt="" />
 
     						</div>
 
@@ -270,71 +173,7 @@ class HomePage extends React.Component {
 
     			</section>
 
-    			{/* ==============================================
-    			ABOUT
-    			=============================================== */}
-    			<section id="about" className="big-padding">
 
-    				<div className="container">
-
-    					<h1 className="section-title">My Profile<span className="main-color">3</span></h1>
-
-    					<div className="row profile">
-
-    						<div className="col-sm-10 col-sm-offset-1 text-center">
-
-    							<figure className="hover-wrapper scrollimation fade-right">
-    								<img className="img-responsive img-circle profile-img" src="assets/images/profile-img.jpg" alt="" />
-    								<figcaption className="hover-text">That's Me!</figcaption>
-    							</figure>
-
-    							<h2 className="scrollimation fade-left">John Doe</h2>
-    							<h3 className="scrollimation fade-left">UI / UX Expert</h3>
-
-    							<p className="margin-top scrollimation fade-right">I am Jonathan Doe, a twenty five year old designer from NY. I have graduated with a Bachelor degree of Graphic & Web Design, from the University of Pasadena. I have a passion for creating challenging, intuitive and beautiful products. My design process is very hands-on and visual.</p>
-
-    							<p className="lead margin-top scrollimation fade-left">Creating is not just a job for me, it's a passion. </p>
-    							<p className="scrollimation fade-left"><a className="btn btn-dc btn-main-color scrollto" href="#portfolio">My Portfolio</a></p>
-
-    						</div>
-
-    					</div>
-
-    				</div>
-
-    			</section>
-
-    			{/* ==============================================
-    			SKILLS
-    			=============================================== */}
-    			<section id="skills" className="small-padding dark-bg">
-
-    				<div className="container">
-
-    					<div className="row skills">
-
-    						<div className="col-sm-6 col-md-3 text-center">
-    							<span className="chart plus-symbol" data-percent="90"><span className="percent">90</span></span>
-    							<h2 className="text-center">Front End</h2>
-    						</div>
-    						<div className="col-sm-6 col-md-3 text-center">
-    							<span className="chart plus-symbol" data-percent="80"><span className="percent">80</span></span>
-    							<h2 className="text-center">Back End</h2>
-    						</div>
-    						<div className="col-sm-6 col-md-3 text-center">
-    							<span className="chart equal-symbol" data-percent="95"><span className="percent">95</span></span>
-    							<h2 className="text-center">Support</h2>
-    						</div>
-    						<div className="col-sm-6 col-md-3 text-center">
-    							<span className="chart" data-percent="90"><span className="percent">90</span></span>
-    							<h2 className="text-center main-color">High Score</h2>
-    						</div>
-
-    					</div>{/*End row */}
-
-    				</div>
-
-    			</section>
 
     			{/* ==============================================
     			PORTFOLIO
@@ -343,8 +182,8 @@ class HomePage extends React.Component {
 
     				<div className="container">
 
-    					<h1 className="section-title">My portfolio<span className="main-color">4</span></h1>
-    					<p className="subtitle">See what people say about my work</p>
+    					<h1 className="section-title">Journalism</h1>
+    					<p className="subtitle">Before I started writing user stories, I wrote articles for newspaper users.</p>
 
     					{/*==== Portfolio Filters ====*/}
 
@@ -534,150 +373,40 @@ class HomePage extends React.Component {
 
     			</section>
 
-    			{/* ==============================================
-    			TESTIMONIALS
-    			=============================================== */}
-    			<section id="testimonials" className="big-padding gray-bg">
 
-    				<div className="container">
+          {/* ==============================================
+          ABOUT
+          =============================================== */}
+          <section id="about" className="big-padding">
 
-    					<h1 className="section-title">Happy Clients<span className="main-color">5</span></h1>
-    					<p className="subtitle">See what people say about my work</p>
+            <div className="container">
 
-    					<div className="row">
+              <h1 className="section-title">About<span className="main-color">3</span></h1>
 
-    						<div className="col-lg-10 col-lg-offset-1 col-sm-12">
+              <div className="row profile">
 
+                <div className="col-sm-10 col-sm-offset-1 text-center">
 
-    							<div className="testimonial-controls">
-    								<span className="previous"><i className="fa fa-angle-left"></i></span>
-    								<span className="next"><i className="fa fa-angle-right"></i></span>
-    							</div>
+                  <figure className="hover-wrapper scrollimation fade-right">
+                    <img className="img-responsive img-circle profile-img" src="assets/images/profile-img.jpg" alt="" />
+                    <figcaption className="hover-text">That's Me!</figcaption>
+                  </figure>
 
-    							<div id="testimonials-slider" className="flexslider">
+                  <h2 className="scrollimation fade-left">John Doe</h2>
+                  <h3 className="scrollimation fade-left">UI / UX Expert</h3>
 
-    								<ul className="slides">
+                  <p className="margin-top scrollimation fade-right">I am Jonathan Doe, a twenty five year old designer from NY. I have graduated with a Bachelor degree of Graphic & Web Design, from the University of Pasadena. I have a passion for creating challenging, intuitive and beautiful products. My design process is very hands-on and visual.</p>
 
-    									<li>
-    										<div className="media scrollimation fade-right">
+                  <p className="lead margin-top scrollimation fade-left">Creating is not just a job for me, it's a passion. </p>
+                  <p className="scrollimation fade-left"><a className="btn btn-dc btn-main-color scrollto" href="#portfolio">My Portfolio</a></p>
 
-    											<div className="media-left">
+                </div>
 
-    												<img className="media-object img-circle" src="assets/images/client-1.jpg" alt="" />
+              </div>
 
-    											</div>
+            </div>
 
-    											<div className="media-body">
-
-    												<p className="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus nec magna eget ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus nec magna eget ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra</p>
-    												<p className="client">John Doe / <a href="#link">Google Inc.</a></p>
-
-    											</div>
-
-    										</div>
-
-    										<div className="media scrollimation fade-left">
-
-    											<div className="media-body">
-
-    												<p className="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus nec magna eget ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra</p>
-    												<p className="client">John Doe / <a href="#link">Google Inc.</a></p>
-
-    											</div>
-
-    											<div className="media-right">
-
-    												<img className="media-object img-circle" src="assets/images/client-2.jpg" alt="" />
-
-    											</div>
-
-    										</div>
-    									</li>
-
-    									<li>
-
-    										<div className="media">
-
-    											<div className="media-body">
-
-    												<p className="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus nec magna eget ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra</p>
-    												<p className="client">John Doe / <a href="#link">Google Inc.</a></p>
-
-    											</div>
-
-    											<div className="media-right">
-
-    												<img className="media-object img-circle" src="assets/images/client-3.jpg" alt="" />
-
-    											</div>
-
-    										</div>
-
-    										<div className="media">
-
-    											<div className="media-left">
-
-    												<img className="media-object img-circle" src="assets/images/client-4.jpg" alt="" />
-
-    											</div>
-
-    											<div className="media-body">
-
-    												<p className="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus nec magna eget ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra</p>
-    												<p className="client">John Doe / <a href="#link">Google Inc.</a></p>
-
-    											</div>
-
-    										</div>
-
-    									</li>
-
-    								</ul>
-
-    							</div>
-
-    						</div>
-
-    					</div>
-
-    				</div>
-
-    			</section>
-
-    			<div className="white-bg">
-
-    				<div className="container">
-
-    					<div className="row">
-
-    						<div className="col-sm-3">
-
-    							<a href="#"><img className="img-responsive client-logo" src="assets/images/client-logo-1.png" alt="" /></a>
-
-    						</div>
-
-    						<div className="col-sm-3">
-
-    							<a href="#"><img className="img-responsive client-logo" src="assets/images/client-logo-2.png" alt="" /></a>
-
-    						</div>
-
-    						<div className="col-sm-3">
-
-    							<a href="#"><img className="img-responsive client-logo" src="assets/images/client-logo-3.png" alt="" /></a>
-
-    						</div>
-
-    						<div className="col-sm-3">
-
-    							<a href="#"><img className="img-responsive client-logo" src="assets/images/client-logo-4.png" alt="" /></a>
-
-    						</div>
-    					</div>
-
-    				</div>
-
-    			</div>
+          </section>
 
 
     			{/* ==============================================
