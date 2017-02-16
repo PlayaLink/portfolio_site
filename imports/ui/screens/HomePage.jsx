@@ -49,7 +49,7 @@ class HomePage extends React.Component {
     				<div id="site-nav" className="navbar-collapse collapse">
     					<ul className="nav navbar-nav navbar-right">
     						<li>
-    							<a href="#projects" className="scrollto"><i className="fa fa-desktop"></i>Code projects</a>
+    							<a href="#projects" className="scrollto"><i className="fa fa-desktop"></i>Code</a>
     						</li>
     						<li>
     							<a href="#portfolio" className="scrollto"><i className="fa fa-pencil"></i>Journalism</a>
@@ -57,9 +57,6 @@ class HomePage extends React.Component {
                 <li>
                   <a href="#about" className="scrollto"><i className="fa fa-commenting"></i>About</a>
                 </li>
-    						<li>
-    							<a href="#contact" className="scrollto"><i className="fa fa-envelope"></i>Contact</a>
-    						</li>
     					</ul>
     				</div>{/*End navbar-collapse */}
 
@@ -79,15 +76,16 @@ class HomePage extends React.Component {
     					<div className="col-sm-10 col-sm-offset-1 text-center">
 
     						<h1 className="scrollimation fade-down d1">Jordan England-Nelson</h1>
-    						<h2 className="scrollimation fade-down d3"><span className="main-color">D</span>eveloper | <span className="main-color">W</span>riter | <span className="main-color">R</span>esearcher</h2>
-
-    					</div>
+    						{/*<h2 className="scrollimation fade-down d3">Software <span className="main-color">Developer</span> | Technical <span className="main-color">Writer</span></h2>*/}
+    						<h2 className="scrollimation fade-down d3"><span className="main-color">S</span>oftware <span className="main-color">D</span>eveloper | <span className="main-color">T</span>echnical <span className="main-color">W</span>riter</h2>
+                <div className="header-img scrollimation fade-up d1" style={{top: "140px"}}>
+                  <img className="img-responsive" src="assets/images/portfolio_headshot_header.png" alt="" />
+                </div>
+            </div>
 
     				</div>
 
-    				<div className="header-img scrollimation fade-up d1">
-    					<img className="img-responsive" src="assets/images/header-img.png" alt="" />
-    				</div>
+
 
     			</div>
 
@@ -96,7 +94,7 @@ class HomePage extends React.Component {
     		<div id="main-content">
 
     			<div className="scroll-down">
-    				<a href="#services" className="scrollto">Learn More</a>
+    				<a href="#services" className="scrollto"></a>
     			</div>
 
 
@@ -109,65 +107,92 @@ class HomePage extends React.Component {
 
     				<div className="container">
 
-    					<h1 className="section-title">Latest Projects<span className="main-color">2</span></h1>
-
+    					<h1 className="section-title">Code Projects</h1>
+              <hr />
     					<div className="row">
 
     						<div className="col-sm-5 push-down scrollimation fade-right">
 
     							<h2 className="row-title">SpecialEd Goal Tracker</h2>
-
-    							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lorem orci. Suspendisse posuere tincidunt dui vel tempus. Fusce ut vulputate ipsum, id sodales arcu. Praesent ultricies pretium sem, fermentum sagittis.</p>
-
-    							<p><a className="btn btn-dc btn-small btn-main-color" href="#link">Visit Website</a></p>
+                  <div className="text-left">
+                    <p>Web app that helps teachers manage academic and behavioral goals for students with special needs.</p>
+                    <p>I gathered requirements from teachers and built the entire app with <span className="main-color">Node</span>, <span className="main-color">React</span>, <span className="main-color">Bootstrap</span>, and <span className="main-color">Websockets</span>.</p>
+                    <p>Currently user testing at the Orange County Department of Education's primary special needs campus in Fountain Valley.</p>
+      							{/*<p><a className="btn btn-dc btn-small btn-main-color" href="#link">Visit Website</a></p>*/}
+                  </div>
 
     						</div>
 
-    						<div className="col-sm-6 col-sm-offset-1 scrollimation fade-left">
+    						<div className="col-xs-4 col-sm-2 col-sm-offset-1 scrollimation fade-left">
 
-    							<img className="img-responsive" src="assets/images/login_facing_left.png" alt="" />
+    							<img className="img-responsive" src="assets/images/iphone/dashboard_facing_right1.png" alt="" />
+
+    						</div>
+
+    						<div className="col-xs-4 col-sm-2 scrollimation fade-left">
+
+    							<img className="img-responsive" src="assets/images/iphone/goal_detail_portrait1.png" alt="" />
+
+    						</div>
+
+    						<div className="col-xs-4 col-sm-2 scrollimation fade-left">
+
+    							<img className="img-responsive" src="assets/images/iphone/evaluation_facing_left1.png" alt="" />
 
     						</div>
 
     					</div>
 
-    					<hr />
+    					<hr style={{marginTop: "40px"}} />
 
     					<div className="row">
 
     						<div className="col-sm-6 col-sm-push-6 push-down scrollimation fade-left">
 
-    							<h2 className="row-title">Graphista  - Personal Portfolio</h2>
-
-    							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lorem orci. Suspendisse posuere tincidunt dui vel tempus. Fusce ut vulputate ipsum, id sodales arcu. Praesent ultricies pretium sem, fermentum sagittis.</p>
-
-    							<p>Suspendisse posuere tincidunt dui vel tempus. Fusce ut vulputate ipsum, id sodales arcu. Praesent ultricies pretium sem, fermentum sagittis.</p>
-
-    							<p><a className="btn btn-dc btn-small btn-main-color" href="#link">Visit Website</a></p>
+    							<h2 className="row-title">RapiDoc</h2>
+                  <div className="text-left">
+                    <p>Healthcare marketplace app that helps patients find providers willing to accept discount rates in exchange for paying cash for service.
+                    Currently testing with 100 practices.</p>
+                    <p>I converted the UI from <span className="main-color">Blaze</span> templates to <span className="main-color">React</span> components.</p>
+                  </div>
 
     						</div>
 
     						<div className="col-sm-6 col-sm-pull-6 scrollimation fade-right">
-    							<img className="img-responsive" src="assets/images/featured-1.png" alt="" />
+                  <div className="row">
+                    <div className="col-xs-8 col-xs-offset-2">
+                      <img className="img-responsive" src="assets/images/rapidoc_screenshot_framed.jpg" alt="" />
+                    </div>
+                  </div>
     						</div>
 
     					</div>
 
-    				</div>
+              <hr />
 
-    			</section>
+              <div className="row">
 
+    						<div className="col-sm-5 col-sm-offset-1 push-down scrollimation fade-right">
 
-    			{/* ==============================================
-    			CALL TO ACTION
-    			=============================================== */}
-    			<section id="cta1" className="bg-main-color cta">
+    							<h2 className="row-title">Spliffen</h2>
 
-    				<div className="container text-center scrollimation fade-up">
+                  <div className="text-left">
+      							<p>White-label SAAS product that helps marijuana dispensaries manage monthly subscriptions and online sales.</p>
+      							<p>I built out the front-end with <span className="main-color">React</span>.</p>
+                  </div>
 
-    					<p>It's not about ideas. Its about making ideas happen.</p>
+    						</div>
 
-    					<a className="btn btn-dc btn-white scrollto" href="#contact">Contact Me</a>
+                <div className="col-sm-6 scrollimation fade-left">
+                  <div className="row">
+                    <div className="col-xs-8 col-xs-offset-2">
+                      <img className="img-responsive" src="assets/images/spliffen_portrait.png" alt="" />
+                    </div>
+                  </div>
+    						</div>
+
+    					</div>
+
 
     				</div>
 
@@ -183,16 +208,16 @@ class HomePage extends React.Component {
     				<div className="container">
 
     					<h1 className="section-title">Journalism</h1>
-    					<p className="subtitle">Before I started writing user stories, I wrote articles for newspaper users.</p>
+    					<p className="subtitle">Before I wrote code for users, I wrote stories for readers.</p>
 
     					{/*==== Portfolio Filters ====*/}
 
     					<div className="text-center scrollimation fade-up">
     						<div id="filter-works" className="btn-group">
-    							<button data-filter="*" type="button" className="btn btn-default active">All Items<span className="project-count"></span></button>
-    							<button data-filter=".web" type="button" className="btn btn-default">Web<span className="project-count"></span></button>
-    							<button data-filter=".print" type="button" className="btn btn-default">Print<span className="project-count"></span></button>
-    							<button data-filter=".video" type="button" className="btn btn-default">Video<span className="project-count"></span></button>
+    							<button data-filter="*" type="button" className="btn btn-default active">All stories<span className="project-count"></span></button>
+    							<button data-filter=".tech" type="button" className="btn btn-default">Tech<span className="project-count"></span></button>
+    							<button data-filter=".digital-media" type="button" className="btn btn-default">Digital Media<span className="project-count"></span></button>
+    							<button data-filter=".travel" type="button" className="btn btn-default">Travel<span className="project-count"></span></button>
     						</div>
     					</div>
 
@@ -200,178 +225,164 @@ class HomePage extends React.Component {
 
     				<div className="container scrollimation fade-up">
 
-    					<div id="projects-container" className="row">
+    					<div id="projects-container">
 
     						{/* ==============================================
     						SINGLE PROJECT ITEM
     						=============================================== */}
 
-    						<a className="project-item col-sm-6 col-md-4 col-lg-3 web" href="#?slider-project.html">
+                <div className="row">
 
-    							<img className="img-responsive project-image" src="assets/images/projects/thumb-1.jpg"  alt="" />
+      						<a className="project-item col-sm-6 col-md-4 col-lg-3 travel tech" href="http://www.dailybreeze.com/lifestyle/20140905/burning-man-2014-reporter-survives-festival-returns-a-burner" target="_blank">
 
-    							<div className="hover-title">
-    								<h2 className="project-title">Project with Slider</h2>{/*Project Title */}
-    								<p>Brochure design</p>{/*Project Subtitle */}
-    							</div>
+      							<img style={{width: '358px', height: '270px', objectFit: 'cover'}} className="img-responsive project-image" src="assets/images/journalism/burningman.jpg"  alt="burning man jordan england-nelson" />
 
-    						</a>
+      							<div className="hover-title">
+      								<h2 className="project-title">Burning Man</h2>{/*Project Title */}
+      								<p>My coverage from 2014</p>{/*Project Subtitle */}
+      							</div>
 
-    						<a className="project-item col-sm-6 col-md-4 col-lg-3 web" href="#?youtube-project.html">
+      						</a>
 
-    							<img className="img-responsive project-image" src="assets/images/projects/thumb-2.jpg"  alt="" />
+      						<a className="project-item col-sm-6 col-md-4 col-lg-3 digital-media" href="http://www.insidesocal.com/technology/2015/04/02/how-ad-agency-mistress-creative-uses-social-media/" target="_blank">
 
-    							<div className="hover-title">
-    								<h2 className="project-title">Video project</h2>{/*Project Title */}
-    								<p>Youtube video</p>{/*Project Subtitle */}
-    							</div>
+      							<img style={{width: '358px', height: '270px', objectFit: 'cover'}} className="img-responsive project-image" src="assets/images/journalism/hotwheels.jpg"  alt="hot wheels mistress creative" />
 
-    						</a>
+      							<div className="hover-title">
+      								<h2 className="project-title">Digital Mad Men</h2>{/*Project Title */}
+      								<p>How ad agency Mistress Creative harnesses social media</p>{/*Project Subtitle 283x212*/}
+      							</div>
 
-    						<a className="project-item col-sm-6 col-md-4 col-lg-3 web" href="#?images-project.html">
+      						</a>
 
-    							<img className="img-responsive project-image" src="assets/images/projects/thumb-3.jpg"  alt="" />
+      						<a className="project-item col-sm-6 col-md-4 col-lg-3 travel" href="http://www.ocregister.com/articles/aubrey-606672-one-day.html" target="_blank">
 
-    							<div className="hover-title">
-    								<h2 className="project-title">Fullwidth images</h2>{/*Project Title */}
-    								<p>Professional Web Design</p>{/*Project Subtitle */}
-    							</div>
+      							<img style={{width: '358px', height: '270px', objectFit: 'cover'}} className="img-responsive project-image" src="assets/images/journalism/romance.jpg"  alt="" />
 
-    						</a>
+      							<div className="hover-title">
+      								<h2 className="project-title">Romance On A Shoestring</h2>{/*Project Title */}
+      								<p>A broke journalist takes his girfriend to Oakland for Valentine's Day</p>{/*Project Subtitle */}
+      							</div>
 
-    						<a className="project-item col-sm-6 col-md-4 col-lg-3 web" href="#?vimeo-project.html">
+      						</a>
 
-    							<img className="img-responsive project-image" src="assets/images/projects/thumb-4.jpg"  alt="" />
+      						<a className="project-item col-sm-6 col-md-4 col-lg-3 tech" href="http://www.dailybreeze.com/business/20140529/spacex-unveils-first-commercial-capsule-capable-of-manned-flight" target="_blank">
 
-    							<div className="hover-title">
-    								<h2 className="project-title">Another Video project</h2>{/*Project Title */}
-    								<p>Vimeo video</p>{/*Project Subtitle */}
-    							</div>
+      							<img style={{width: '358px', height: '270px', objectFit: 'cover'}} className="img-responsive project-image" src="assets/images/journalism/spacex.jpg"  alt="" />
 
-    						</a>
+      							<div className="hover-title">
+      								<h2 className="project-title">The Race to ISS</h2>{/*Project Title */}
+      								<p>Elon Musk unveils his Dragon V2 manned spaceship</p>{/*Project Subtitle */}
+      							</div>
 
-    						<a className="project-item col-sm-6 col-md-4 col-lg-3 print" href="#?slider-project.html">
+      						</a>
 
-    							<img className="img-responsive project-image" src="assets/images/projects/thumb-6.jpg"  alt="" />
 
-    							<div className="hover-title">
-    								<h2 className="project-title">Project with Slider</h2>{/*Project Title */}
-    								<p>Modern Business Card</p>{/*Project Subtitle */}
-    							</div>
 
-    						</a>
 
-    						<a className="project-item col-sm-6 col-md-4 col-lg-3 print" href="#?images-project.html">
 
-    							<img className="img-responsive project-image" src="assets/images/projects/thumb-7.jpg"  alt="" />
+      						<a className="project-item col-sm-6 col-md-4 col-lg-3 travel" href="http://www.ocregister.com/articles/bar-598267-friend-dance.html" target="_blank">
 
-    							<div className="hover-title">
-    								<h2 className="project-title">Fullwidth images</h2>{/*Project Title */}
-    								<p>Poster Design</p>{/*Project Subtitle */}
-    							</div>
+      							<img style={{width: '358px', height: '270px', objectFit: 'cover'}} className="img-responsive project-image" src="assets/images/journalism/tijuana.jpg"  alt="" />
 
-    						</a>
+      							<div className="hover-title">
+      								<h2 className="project-title">Tijuana By Night</h2>{/*Project Title */}
+      								<p>After drug violence scared off American tourists, Tijuana's arts and music scene exploded</p>{/*Project Subtitle */}
+      							</div>
 
-    						<a className="project-item col-sm-6 col-md-4 col-lg-3 print" href="#?slider-project.html">
+      						</a>
 
-    							<img className="img-responsive project-image" src="assets/images/projects/thumb-8.jpg"  alt="" />
+      						<a className="project-item col-sm-6 col-md-4 col-lg-3 tech" href="http://www.dailybreeze.com/environment-and-nature/20140713/automakers-begin-to-embrace-hydrogen-fuel-cell-technology" target="_blank">
 
-    							<div className="hover-title">
-    								<h2 className="project-title">Project with Slider</h2>{/*Project Title */}
-    								<p>Personal Business Card</p>{/*Project Subtitle */}
-    							</div>
+      							<img style={{width: '358px', height: '270px', objectFit: 'cover'}} className="img-responsive project-image" src="assets/images/journalism/fuelcell.jpg"  alt="" />
 
-    						</a>
+      							<div className="hover-title">
+      								<h2 className="project-title">Riding on Hot Air</h2>{/*Project Title */}
+      								<p>SoCal's hydrogen fuel cell experiment</p>{/*Project Subtitle */}
+      							</div>
 
-    						<a className="project-item col-sm-6 col-md-4 col-lg-3 print" href="#?vimeo-project.html">
+      						</a>
 
-    							<img className="img-responsive project-image" src="assets/images/projects/thumb-5.jpg"  alt="" />
+      						<a className="project-item col-sm-6 col-md-4 col-lg-3 travel" href="http://www.dailybreeze.com/lifestyle/20141025/how-a-vacation-time-share-can-become-a-money-drain-for-owners" target="_blank">
 
-    							<div className="hover-title">
-    								<h2 className="project-title">Video project</h2>{/*Project Title */}
-    								<p>Vimeo video</p>{/*Project Subtitle */}
-    							</div>
+      							<img style={{width: '358px', height: '270px', objectFit: 'cover'}} className="img-responsive project-image" src="assets/images/journalism/timeshare.jpg"  alt="" />
 
-    						</a>
+      							<div className="hover-title">
+      								<h2 className="project-title">Timeshare Fraud</h2>{/*Project Title */}
+      								<p>It's a bigger problem than you think</p>{/*Project Subtitle */}
+      							</div>
 
-    						<a className="project-item col-sm-6 col-md-4 col-lg-3 video" href="#?slider-project.html">
+      						</a>
 
-    							<img className="img-responsive project-image" src="assets/images/projects/thumb-9.jpg"  alt="" />
+      						<a className="project-item col-sm-6 col-md-4 col-lg-3 tech" href="http://www.insidesocal.com/technology/2015/04/03/3d-digital-scanning-promises-eternal-youth-in-hollywood/" target="_blank">
 
-    							<div className="hover-title">
-    								<h2 className="project-title">Project with Slider</h2>{/*Project Title */}
-    								<p>Professional Brand Identity</p>{/*Project Subtitle */}
-    							</div>
+      							<img style={{width: '358px', height: '270px', objectFit: 'cover'}} className="img-responsive project-image" src="assets/images/journalism/virtual_reality.jpg"  alt="" />
 
-    						</a>
+      							<div className="hover-title">
+      								<h2 className="project-title">Virtual Reality</h2>{/*Project Title */}
+      								<p>3D scanning promises eternal youth in Hollywood</p>{/*Project Subtitle */}
+      							</div>
 
-    						<a className="project-item col-sm-6 col-md-4 col-lg-3 video" href="#?vimeo-project.html">
+      						</a>
 
-    							<img className="img-responsive project-image" src="assets/images/projects/thumb-10.jpg"  alt="" />
 
-    							<div className="hover-title">
-    								<h2 className="project-title">Another Video project</h2>{/*Project Title */}
-    								<p>Vimeo video</p>{/*Project Subtitle */}
-    							</div>
 
-    						</a>
 
-    						<a className="project-item col-sm-6 col-md-4 col-lg-3 video" href="#?images-project.html">
+      						<a className="project-item col-sm-6 col-md-4 col-lg-3 tech" href="#?http://www.dailybreeze.com/technology/20140626/los-angeles-south-bay-tech-companies-merge-virtual-reality-with-skydiving" target="_blank">
 
-    							<img className="img-responsive project-image" src="assets/images/projects/thumb-11.jpg"  alt="" />
+      							<img style={{width: '358px', height: '270px', objectFit: 'cover'}} className="img-responsive project-image" src="assets/images/journalism/skydive.jpg"  alt="" />
 
-    							<div className="hover-title">
-    								<h2 className="project-title">Fullwidth images</h2>{/*Project Title */}
-    								<p>Creative Business Card</p>{/*Project Subtitle */}
-    							</div>
+      							<div className="hover-title">
+      								<h2 className="project-title">Virtual Free Fall</h2>{/*Project Title */}
+      								<p>Startup uses Microsoft Kinect to train smokejumpers and Special Forces</p>{/*Project Subtitle */}
+      							</div>
 
-    						</a>
+      						</a>
 
-    						<a className="project-item col-sm-6 col-md-4 col-lg-3 video" href="#?youtube-project.html">
+      						<a className="project-item col-sm-6 col-md-4 col-lg-3 digital-media" href="http://www.insidesocal.com/technology/2015/03/30/how-teens-are-making-thousands-per-month-on-social-media/" target="_blank">
 
-    							<img className="img-responsive project-image" src="assets/images/projects/thumb-12.jpg"  alt="" />
+      							<img style={{width: '358px', height: '270px', objectFit: 'cover'}} className="img-responsive project-image" src="assets/images/journalism/teens.jpg"  alt="" />
 
-    							<div className="hover-title">
-    								<h2 className="project-title">Video project</h2>{/*Project Title */}
-    								<p>Youtube video</p>{/*Project Subtitle */}
-    							</div>
+      							<div className="hover-title">
+      								<h2 className="project-title">Teenage Influencers</h2>{/*Project Title */}
+      								<p>The economics of social media marketing and sponsored content</p>{/*Project Subtitle */}
+      							</div>
 
-    						</a>
+      						</a>
 
-    					</div>
+      						<a className="project-item col-sm-6 col-md-4 col-lg-3 digital-media" href="http://www.dailynews.com/toy-design" target="_blank">
 
-    					<p className="lead text-center">Like what you see? Contact me to discuss about your project!</p>
-    					<p className="text-center"><a className="btn btn-dc btn-main-color scrollto" href="#contact">Contact Me</a></p>
+      							<img style={{width: '358px', height: '270px', objectFit: 'cover'}} className="img-responsive project-image" src="assets/images/journalism/toys.jpg"  alt="" />
 
-    				</div>
+      							<div className="hover-title">
+      								<h2 className="project-title">Child's Play</h2>{/*Project Title */}
+      								<p>A five-part series about Southern California's massive toy industry</p>{/*Project Subtitle */}
+      							</div>
 
-    			</section>
+      						</a>
 
-    			{/* ==============================================
-    			TWITTER
-    			=============================================== */}
-    			<section id="twitter-feeds" className="bg-main-color">
+      						<a className="project-item col-sm-6 col-md-4 col-lg-3 tech" href="http://www.ocregister.com/articles/march-597529-car-water.html" target="_blank">
 
-    				<div className="container text-center scrollimation fade-right">
+      							<img style={{width: '358px', height: '270px', objectFit: 'cover'}} className="img-responsive project-image" src="assets/images/journalism/watercar.jpg"  alt="" />
 
-    					<div className="row">
+      							<div className="hover-title">
+      								<h2 className="project-title">WaterCar</h2>{/*Project Title */}
+      								<p>An entrepreneur drives to Catalina Island on his latest invention</p>{/*Project Subtitle */}
+      							</div>
 
-    						<div className="col-sm-10 col-sm-offset-1">
+      						</a>
 
-    							<h1>Latest tweets</h1>
-    							<p><i className="fa fa-twitter"></i></p>
+      					</div>
+              </div>
 
-    							<div id="twitter-slider" className="flexslider" data-widget-id="386017398488186880" data-max-tweets="5"></div>
-
-    							<p><a href="https://twitter.com/qthemes" data-toggle="tooltip" data-placement="bottom" title="Follow Me on Twitter" target="_blank">@johndoe</a></p>
-
-    						</div>
-
-    					</div>
+    					{/*<p className="lead text-center">Like what you see? Contact me to discuss about your project!</p>
+    					<p className="text-center"><a className="btn btn-dc btn-main-color scrollto" href="#contact">Contact Me</a></p>*/}
 
     				</div>
 
     			</section>
+
+
 
 
           {/* ==============================================
@@ -381,24 +392,38 @@ class HomePage extends React.Component {
 
             <div className="container">
 
-              <h1 className="section-title">About<span className="main-color">3</span></h1>
+              <h1 className="section-title">About Me</h1>
 
               <div className="row profile">
 
-                <div className="col-sm-10 col-sm-offset-1 text-center">
+                <div className="col-sm-8 col-sm-offset-2 text-center">
 
-                  <figure className="hover-wrapper scrollimation fade-right">
-                    <img className="img-responsive img-circle profile-img" src="assets/images/profile-img.jpg" alt="" />
-                    <figcaption className="hover-text">That's Me!</figcaption>
+                  <figure className="scrollimation fade-right">
+                    <img className="img-responsive img-circle profile-img" src="assets/images/portfolio_headshot_portrait.png" alt="Jordan England-Nelson" />
                   </figure>
 
-                  <h2 className="scrollimation fade-left">John Doe</h2>
-                  <h3 className="scrollimation fade-left">UI / UX Expert</h3>
+                  {/*Social media*/}
+                  <div>
+                    <div className="social-media-icon">
+                      <a href="https://www.linkedin.com/in/jordan-england-nelson-05283494" data-toggle="tooltip" title="Follow me on LinkedIn" target="_blank"><h2><i className="fa fa-fw fa-linkedin"></i></h2></a>
+                    </div>
 
-                  <p className="margin-top scrollimation fade-right">I am Jonathan Doe, a twenty five year old designer from NY. I have graduated with a Bachelor degree of Graphic & Web Design, from the University of Pasadena. I have a passion for creating challenging, intuitive and beautiful products. My design process is very hands-on and visual.</p>
+                    <div className="social-media-icon">
+                      <a href="https://github.com/playalink" data-toggle="tooltip" title="Follow me on Github" target="_blank"><h2><i className="fa fa-fw fa-github"></i>        </h2></a>
+                    </div>
 
-                  <p className="lead margin-top scrollimation fade-left">Creating is not just a job for me, it's a passion. </p>
-                  <p className="scrollimation fade-left"><a className="btn btn-dc btn-main-color scrollto" href="#portfolio">My Portfolio</a></p>
+                    <div className="social-media-icon">
+                      <a href="https://twitter.com/jordanenelson" data-toggle="tooltip" title="Follow me on Twitter" target="_blank"><h2><i className="fa fa-fw fa-twitter"></i>      </h2></a>
+                    </div>
+                  </div>
+                  <br />
+                  <div className="text-left">
+                    <p className="scrollimation fade-right">I am a full-stack software developer with a background in journalism, digital marketing and product development.</p>
+                    <p className="scrollimation fade-left">Journalism taught me to empathize with users and to distill technical information for a lay audience. These skills have mapped well to the roles I’ve held in tech: user researcher, content marketer, technical writer, software developer.</p>
+                    <p className="scrollimation fade-right">Five years living in Europe taught me how to work with people from different backgrounds and cultures, thrive in unfamiliar environments, and pick up new languages.</p>
+                    <p className="scrollimation fade-left">Full working proficiency in Spanish, French, <span className="main-color">JavaScript</span>, <span className="main-color">Node</span> and <span className="main-color">React</span>.</p>
+                  </div>
+
 
                 </div>
 
@@ -409,122 +434,10 @@ class HomePage extends React.Component {
           </section>
 
 
-    			{/* ==============================================
-    			CONTACT
-    			=============================================== */}
-    			<section id="contact" className="big-padding light-typo color-overlay">
 
-    				<div className="container">
 
-    					<h1 className="section-title">Contact Me<span className="main-color">6</span></h1>
 
-    					<div className="row">
 
-    						<div className="col-sm-6 col-md-5 scrollimation fade-right">
-
-    							<p className="lead">I am available for freelance. <br/>{"Can't wait for the next exciting project! Could it be yours?"}</p>
-
-    							<p>
-    								John Doe<br/>
-    								W325 State Road 123<br/>
-    								Mondovi, WI(Wisconsin) 98746-54321<br/>
-    								(123) 456 - 7890 <br/>
-    							</p>
-
-    							<div className="social-links">
-    								<a href="#"><i className="fa fa-fw fa-twitter"></i></a>
-    								<a href="#"><i className="fa fa-fw fa-facebook-square"></i></a>
-    								<a href="#"><i className="fa fa-fw fa-linkedin-square"></i></a>
-    							</div>
-
-    							<p><a className="mail-styled" href="mailto:mail@example.com">contact@johndoe.com</a></p>
-
-    						</div>
-
-    						{/*=== Contact Form ===*/}
-
-    						<form id="contact-form" className="col-sm-6 col-md-offset-1 scrollimation fade-left" action="contact.php" method="post">
-
-    							<div className="form-group">
-    								<div className="controls">
-    									<input id="contact-name" name="contactName" className="form-control requiredField" type="text" data-error-empty="is required" />
-    									<label className="control-label" htmlFor="contact-name">Name</label>
-    								</div>
-    							</div>{/* End name input */}
-
-    							<div className="form-group">
-    								<div className="controls">
-    									<input id="contact-mail" name="email" className="form-control requiredField" type="email" data-error-empty="is required" data-error-invalid="is invalid" />
-    									<label className="control-label" htmlFor="contact-mail">Email</label>
-    								</div>
-    							</div>{/* End email input */}
-
-    							<div className="form-group">
-    								<div className="controls">
-    									<textarea id="contact-message" name="comments" className="form-control requiredField" rows="6" data-error-empty="is required"></textarea>
-    									<label className="control-label" htmlFor="contact-message">Message</label>
-    								</div>
-    							</div>{/* End textarea */}
-
-    							<button name="submit" type="submit" className="btn" data-error-message="Please fill the required fields" data-sending-message="Sending Message" data-ok-message="Your Message has been sent!">Send It</button>
-    							<input type="hidden" name="submitted" id="submitted" value="true" />
-
-    						</form>{/* End contact-form */}
-
-    					</div>
-
-    				</div>
-
-    			</section>
-
-    			{/* ==============================================
-    			FOOTER
-    			=============================================== */}
-
-    			<footer id="main-footer">
-
-    				<div className="container">
-
-    					<div className="row">
-
-    						<div className="col-sm-2">
-
-    							<a className="logo-link scrollto" href="#home">
-    								<img className="img-responsive" src="assets/images/logo-bw.png" alt="" />
-    							</a>
-
-    						</div>
-
-    						<div className="col-sm-8">
-
-    							<nav>
-
-    								<ul className="footer-nav">
-    									<li><a className="scrollto" href="#home">Home</a></li>
-    									<li><a className="scrollto" href="#services">Services</a></li>
-    									<li><a className="scrollto" href="#portfolio">Portfolio</a></li>
-    									<li><a className="scrollto" href="#contact">Contact</a></li>
-    								</ul>
-
-    							</nav>
-
-    						</div>
-
-    						<div className="col-sm-2 text-right social-links">
-
-    							<a href="#" data-toggle="tooltip" title="Follow me on Twitter"><i className="fa fa-fw fa-twitter"></i></a>
-    							<a href="#" data-toggle="tooltip" title="Follow me on Facebook"><i className="fa fa-fw fa-facebook"></i></a>
-    							<a href="#" data-toggle="tooltip" title="Follow me on LinkedIn"><i className="fa fa-fw fa-linkedin"></i></a>
-
-    						</div>
-
-    					</div>
-
-    				</div>
-
-    			</footer>
-
-    		</div>
 
     		<div id="project-viewer" className="modal fade">
 
@@ -549,6 +462,7 @@ class HomePage extends React.Component {
 
     		</div>{/* /.modal */}
 
+      </div>
 
     		{/* ==============================================
     		SCRIPTS
