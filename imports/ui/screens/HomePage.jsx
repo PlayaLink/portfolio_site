@@ -21,6 +21,11 @@ import "/public/assets/js/scripts.js"
 
 class HomePage extends React.Component {
 
+  componentDidMount(){
+    Meteor.setTimeout(() => {
+      $('li.active').removeClass('active');
+    }, 700);
+  }
 
   render () {
     return(
@@ -111,15 +116,17 @@ class HomePage extends React.Component {
               <hr />
     					<div className="row">
 
-    						<div className="col-sm-5 push-down scrollimation fade-right">
+    						<div className="col-sm-5 scrollimation fade-right">
 
     							<h2 className="row-title">SpecialEd Goal Tracker</h2>
                   <div className="text-left">
                     <p>Web app that helps teachers manage academic and behavioral goals for students with special needs.</p>
                     <p>I gathered requirements from teachers and built the entire app with <span className="main-color">Node</span>, <span className="main-color">React</span>, <span className="main-color">Bootstrap</span>, and <span className="main-color">Websockets</span>.</p>
                     <p>Currently user testing at the Orange County Department of Education's primary special needs campus in Fountain Valley.</p>
-      							{/*<p><a className="btn btn-dc btn-small btn-main-color" href="#link">Visit Website</a></p>*/}
+                    <p><a className="btn btn-dc btn-small btn-main-color" href="https://github.com/PlayaLink/iep-goal-tracker">View code <i className="fa fa-fw fa-github"></i></a></p>
                   </div>
+
+
 
     						</div>
 
@@ -151,7 +158,7 @@ class HomePage extends React.Component {
 
     							<h2 className="row-title">RapiDoc</h2>
                   <div className="text-left">
-                    <p>Healthcare marketplace app that helps patients find providers willing to accept discount rates in exchange for paying cash for service.
+                    <p>A healthcare marketplace app that helps patients find providers willing to accept discount rates in exchange for paying cash for service.
                     Currently testing with 100 practices.</p>
                     <p>I converted the UI from <span className="main-color">Blaze</span> templates to <span className="main-color">React</span> components.</p>
                   </div>
@@ -160,7 +167,7 @@ class HomePage extends React.Component {
 
     						<div className="col-sm-6 col-sm-pull-6 scrollimation fade-right">
                   <div className="row">
-                    <div className="col-xs-8 col-xs-offset-2">
+                    <div className="col-xs-6 col-xs-offset-3">
                       <img className="img-responsive" src="assets/images/rapidoc_screenshot_framed.jpg" alt="" />
                     </div>
                   </div>
@@ -185,7 +192,7 @@ class HomePage extends React.Component {
 
                 <div className="col-sm-6 scrollimation fade-left">
                   <div className="row">
-                    <div className="col-xs-8 col-xs-offset-2">
+                    <div className="col-xs-6 col-xs-offset-3">
                       <img className="img-responsive" src="assets/images/spliffen_portrait.png" alt="" />
                     </div>
                   </div>
@@ -418,10 +425,10 @@ class HomePage extends React.Component {
                   </div>
                   <br />
                   <div className="text-left">
-                    <p className="scrollimation fade-right">I am a full-stack software developer with a background in journalism, digital marketing and product development.</p>
-                    <p className="scrollimation fade-left">Journalism taught me to empathize with users and to distill technical information for a lay audience. These skills have mapped well to the roles I’ve held in tech: user researcher, content marketer, technical writer, software developer.</p>
-                    <p className="scrollimation fade-right">Five years living in Europe taught me how to work with people from different backgrounds and cultures, thrive in unfamiliar environments, and pick up new languages.</p>
-                    <p className="scrollimation fade-left">Full working proficiency in Spanish, French, <span className="main-color">JavaScript</span>, <span className="main-color">Node</span> and <span className="main-color">React</span>.</p>
+                    <p>I am a software engineer with experience developing full-stack web applications with JavaScript, jQuery, Node, REStful APIs, web sockets and Bootstrap. I also have a background in journalism, digital marketing and product development.</p>
+                    <p>Journalism taught me to empathize with users and to distill technical information for a lay audience. These skills have mapped well to the roles I’ve held in tech: user researcher, content marketer, technical writer, software developer.</p>
+                    <p>Five years living in Europe taught me how to work with people from different backgrounds and cultures, thrive in unfamiliar environments, and pick up new languages.</p>
+                    <p>Full working proficiency in Spanish, French, <span className="main-color">JavaScript</span>, <span className="main-color">Node</span> and <span className="main-color">React</span>.</p>
                   </div>
 
 
