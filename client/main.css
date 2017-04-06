@@ -4,6 +4,20 @@
   display: inline-block;
 }
 
+.social-icon-list {
+  margin-bottom: 1.2em;
+}
+
 .source-code-button {
   margin: 0 auto;
+}
+
+.project-desription {
+  margin: .5em;
+}
+
+.project-image {
+  margin-top: 20px;
+  margin-bo: 10px;
+  max-height: 300px;
 }
