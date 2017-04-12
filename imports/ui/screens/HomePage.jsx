@@ -60,7 +60,10 @@ class HomePage extends React.Component {
     							<a href="#projects" className="scrollto"><i className="fa fa-desktop"></i>Code</a>
     						</li>
     						<li>
-    							<a href="#portfolio" className="scrollto"><i className="fa fa-pencil"></i>Journalism</a>
+    							<a href="#portfolio" className="scrollto"><i className="fa fa-newspaper-o"></i>Journalism</a>
+    						</li>
+    						<li>
+    							<a href="https://medium.com/@jordanenelson/leave-journalism-learn-to-code-64ae08745ec3" ><i className="fa fa-pencil"></i>Blog</a>
     						</li>
     					</ul>
     				</div>{/*End navbar-collapse */}
@@ -148,7 +151,7 @@ class HomePage extends React.Component {
 
 
     			{/* ==============================================
-    			LATEST PROJECTS
+    			CODE PROJECTS
     			=============================================== */}
 
     			<section id="projects" className="big-padding gray-bg">
@@ -157,37 +160,60 @@ class HomePage extends React.Component {
 
     					<h1 className="section-title">Code</h1>
 
-              {/* Special Ed Goal Tracker */}
+        {/* Special Ed Goal Tracker */}
     					<div className="row">
-    						<div className="col-sm-5 scrollimation fade-right">
-    							<h2 className="row-title">SpecialEd Goal Tracker</h2>
+    						<div className="col-sm-4 col-sm-offset-2 scrollimation fade-right" id="iep-description">
+          {/*Project name + description */}
+              <div className="row">
+                <div className="col-xs-12">
+                  <h2 className="row-title">SpecialEd Goal Tracker</h2>
                   <div className="text-left">
                     <p>Web app that helps teachers manage academic and behavioral goals for students with special needs.</p>
                     <p>I gathered requirements from teachers and built the entire app with <span className="main-color">Node</span>, <span className="main-color">React</span>, <span className="main-color">Bootstrap</span>, and <span className="main-color">Websockets</span>.</p>
                     <p>Currently user testing at the Orange County Department of Education's primary special needs campus in Fountain Valley.</p>
-                    <p><a className="btn btn-dc btn-small btn-main-color source-code-button" href="https://github.com/PlayaLink/iep-goal-tracker">View project <i className="fa fa-fw fa-github"></i></a></p>
                   </div>
-    						</div>
-                <div className="project-image">
-      						<div className="col-xs-4 col-sm-2 col-sm-offset-1 scrollimation fade-left">
-      							<img className="img-responsive" src="assets/images/specialEd/dashboard_facing_right1.png" alt="" />
-      						</div>
-
-      						<div className="col-xs-4 col-sm-2 scrollimation fade-left">
-      							<img className="img-responsive" src="assets/images/specialEd/goal_detail_portrait1.png" alt="" />
-      						</div>
-
-      						<div className="col-xs-4 col-sm-2 scrollimation fade-left">
-      							<img className="img-responsive" src="assets/images/specialEd/evaluation_facing_left1.png" alt="" />
-      						</div>
                 </div>
+              </div>
+
+                {/* Screenshot triptych */}
+                  <div className="row">
+                    <div className="screenshot-triptych">
+
+                      <div className="col-xs-4 scrollimation fade-left">
+                        <img className="img-responsive" src="assets/images/specialEd/dashboard_facing_right1.png" alt="" />
+                      </div>
+
+                      <div className="col-xs-4 scrollimation fade-left">
+                        <img className="img-responsive" src="assets/images/specialEd/goal_detail_portrait1.png" alt="" />
+                      </div>
+
+                      <div className="col-xs-4 scrollimation fade-left">
+                        <img className="img-responsive" src="assets/images/specialEd/evaluation_facing_left1.png" alt="" />
+                      </div>
+
+                    </div>
+                  </div>
+              {/* Learn more button */}
+                  <div id="iep-learn-more" className="row">
+                    <div className="col-xs-6 col-xs-offset-3">
+                      <p><a className="btn btn-dc btn-small btn-main-color source-code-button" href="https://medium.com/@jordanenelson/a-goal-tracking-app-for-students-with-special-needs-6fe5334d2a53">Learn more </a></p>
+                    </div>
+                  </div>
+
+    						</div>
+            {/* App demo iframe video*/}
+    						<div className="col-xs-5 col-xs-offset-1 scrollimation fade-left">
+                  <iframe width="414" height="736" src="assets/vid/iep-goal-tracker-demo.webm" frameborder="0" allowfullscreen></iframe>
+    						</div>
+
 
     					</div>
 
     					<hr style={{margin: "40px"}} />
 
+          {/*RapiDoc*/}
     					<div className="row">
-    {/*RapiDoc*/}
+
     						<div className="col-xs-6 col-sm-3 scrollimation fade-left">
 
     							<h2 className="row-title">RapiDoc</h2>

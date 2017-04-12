@@ -12,12 +12,21 @@
   margin: 0 auto;
 }
 
-.project-desription {
-  margin: .5em;
+.screenshot-triptych {
+  margin-top: 2em;
+  margin-bottom: 2em;;
 }
 
-.project-image {
+#iep-description {
+  margin-top: 3em;
+}
+
+#iep-learn-more {
+  margin-top: 2em;
+}
+
+/*.project-image {
   margin-top: 20px;
   margin-bo: 10px;
   max-height: 300px;
-}
+}*/
