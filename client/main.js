@@ -1,11 +1,10 @@
-import React from 'react';
-import { Meteor } from 'meteor/meteor';
-import { render } from 'react-dom';
+// import React from 'react';
+// import { Meteor } from 'meteor/meteor';
+// import { render } from 'react-dom';
 
-
-import HomePage from '/imports/ui/screens/HomePage.jsx'
+import '/imports/ui/routes.js';
 
 
 Meteor.startup(() => {
-  render(<HomePage />, document.getElementById('react-target'));
+  // render(<HomePage />, document.getElementById('react-target'));
 });
