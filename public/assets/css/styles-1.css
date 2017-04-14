@@ -173,7 +173,7 @@ hr{
 .btn-dc:after{
 	position: absolute;
 	margin-left:10px;
-	content:"\f061";
+	content:"\f054";
 	font-family: fontAwesome;
 	opacity:0;
 	-webkit-transition:all .2s ease-out .0s;

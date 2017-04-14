@@ -1,5 +1,15 @@
 /* CSS declarations go here */
 
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display:inline-block;
+    float: none;
+}
+
+
 .social-media-icon {
   display: inline-block;
 }
@@ -9,17 +19,28 @@
   margin: 0 auto;
 }
 
-.screenshot-triptych {
-  margin-top: 2em;
-  margin-bottom: 2em;;
-}
 
 #iep-description {
-  margin-top: 3em;
+  margin-top: 30px;;
 }
 
-#iep-learn-more {
-  margin-top: 2em;
+
+#app-demo-vid {
+  position: relative;
+}
+
+/*#app-demo-iphone {
+  position: absolute;
+  top: 40px;
+  z-index: 1;
+
+}*/
+
+#app-demo-iframe {
+  position: absolute;
+  top: -607px;
+  left: 23px;
+  z-index: -1;
 }
 
 /*.project-image {
