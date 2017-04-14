@@ -8,9 +8,15 @@ export default class NavBar extends React.Component {
     }, 700);
   }
 
+  addIn(){
+    $(function() {
+      $('scrollimation').addClass('in');
+    });
+  }
+
   render(){
     return (
-      <div id="main-nav" className="navbar navbar-fixed-top">
+      <div id="main-nav" className="navbar navbar-fixed-top center">
         <div className="container">
 
           <div className="navbar-header">
@@ -25,23 +31,25 @@ export default class NavBar extends React.Component {
           </div>
 
           <div id="site-nav" className="navbar-collapse collapse">
-            <ul className="nav navbar-nav navbar-right">
-              <li>
-                <a href="/" className="scrollto"><i className="fa fa-home"></i>Home</a>
-              </li>
-              <li>
-                <a href="/about" className="scrollto"><i className="fa fa-user"></i>About</a>
-              </li>
-              <li>
-                <a href="/journalism-portfolio" className="scrollto"><i className="fa fa-newspaper-o"></i>Journalism</a>
-              </li>
-              <li>
-                <a href="https://medium.com/@jordanenelson/" ><i className="fa fa-pencil"></i>Blog</a>
-              </li>
-              <li>
-                <a href="/contact" className="scrollto"><i className="fa fa-commenting"></i>Contact</a>
-              </li>
-            </ul>
+            <div className="navbar-inner">
+              <ul className="nav navbar-nav">
+                <li>
+                  <a href="/" className="scrollto"><i className="fa fa-home"></i>Home</a>
+                </li>
+                <li>
+                  <a href="/about" className="scrollto"><i className="fa fa-user"></i>About</a>
+                </li>
+                <li>
+                  <a href="/journalism-portfolio" onClick={this.addIn()}><i className="fa fa-newspaper-o"></i>Journalism</a>
+                </li>
+                <li>
+                  <a href="https://medium.com/@jordanenelson/" ><i className="fa fa-pencil"></i>Blog</a>
+                </li>
+                <li>
+                  <a href="/contact" className="scrollto"><i className="fa fa-commenting"></i>Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
 
         </div>

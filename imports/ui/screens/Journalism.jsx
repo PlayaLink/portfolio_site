@@ -2,6 +2,12 @@ import React from 'react';
 
 export default class Journalism extends React.Component {
 
+  componentDidMount(){
+    $('.scrollimation').waypoint(function(){
+      $(this).addClass('in');
+    },{offset:'95%'});
+  }
+
   render(){
     return (
       <div>

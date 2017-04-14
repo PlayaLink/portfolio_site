@@ -2,6 +2,12 @@ import React from 'react';
 
 export default class Contact extends React.Component {
 
+  componentDidMount(){
+    $('.scrollimation').waypoint(function(){
+      $(this).addClass('in');
+    },{offset:'95%'});
+  }
+
   render(){
     return (
       <div>
@@ -11,7 +17,7 @@ export default class Contact extends React.Component {
 
             <div className="row">
 
-              <div className="col-sm-6 col-sm-offset-3 col-md-5 scrollimation fade-right text-center">
+              <div className="col-sm-6 col-sm-offset-3 col-md-5 scrollimation fade-up text-center">
 
                 <p>You can find me on:</p>
 
