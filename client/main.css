@@ -20,6 +20,10 @@
 }
 
 
+.recent-project img {
+  margin-top: 40px;;
+}
+
 #iep-description {
   margin-top: 30px;;
 }
@@ -29,22 +33,10 @@
   position: relative;
 }
 
-/*#app-demo-iphone {
-  position: absolute;
-  top: 40px;
-  z-index: 1;
-
-}*/
 
 #app-demo-iframe {
   position: absolute;
-  top: -607px;
-  left: 23px;
+  top: -595px;
+  left: 20px;
   z-index: -1;
 }
-
-/*.project-image {
-  margin-top: 20px;
-  margin-bo: 10px;
-  max-height: 300px;
-}*/

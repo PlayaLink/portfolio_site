@@ -37,6 +37,16 @@ $(document).ready(function(){
 		}
 	});
 
+	$('li a').click(function(e){
+		console.log("jquery triggered");
+		$('.navbar-toggle').click();
+	});
+
+	// _.each($('li'), (element) => {
+	// 	console.log("jquery triggered 2");
+	// 	$('.navbar-toggle').click();
+	// });
+
 	/*============================================
 	Tabs
 	==============================================*/

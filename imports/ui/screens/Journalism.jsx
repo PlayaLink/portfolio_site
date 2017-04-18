@@ -16,18 +16,18 @@ export default class Journalism extends React.Component {
           <div className="container">
 
             <h1 className="section-title">Journalism</h1>
-            <p className="subtitle">Before I wrote code for users, I wrote stories for readers.</p>
+            <p className="subtitle">Before I wrote code for website users, I wrote stories for newspaper readers.</p>
 
             {/*==== Filters ====*/}
 
-            <div className="text-center scrollimation fade-up">
+      {/*   <div className="text-center scrollimation fade-up">
               <div id="filter-works" className="btn-group">
                 <button data-filter="*" type="button" className="btn btn-default active">All stories<span className="project-count"></span></button>
                 <button data-filter=".tech" type="button" className="btn btn-default">Tech<span className="project-count"></span></button>
                 <button data-filter=".digital-media" type="button" className="btn btn-default">Digital Media<span className="project-count"></span></button>
                 <button data-filter=".travel" type="button" className="btn btn-default">Travel<span className="project-count"></span></button>
               </div>
-            </div>
+            </div> */}
 
           </div>
 

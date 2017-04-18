@@ -6,6 +6,11 @@ export default class NavBar extends React.Component {
     Meteor.setTimeout(() => {
       $('li.active').removeClass('active');
     }, 700);
+
+    $('#site-nav li').click(function(e){
+      $('.navbar-toggle').click();
+    });
+
   }
 
   addIn(){
