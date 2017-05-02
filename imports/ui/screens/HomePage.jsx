@@ -13,31 +13,24 @@ class HomePage extends React.Component {
   render () {
     return(
       <div>
-        <div id="home">
-
-    			<div className="container">
-
-    				<div className="row">
-
-    					<div className="col-sm-10 col-sm-offset-1 text-center">
-
-    						<h1 className="scrollimation fade-down d1">Jordan England-Nelson</h1>
-    						{/*<h2 className="scrollimation fade-down d3">Software <span className="main-color">Developer</span> | Technical <span className="main-color">Writer</span></h2>*/}
-    						<h2 className="scrollimation fade-down d3"><span className="main-color">S</span>oftware <span className="main-color">E</span>ngineer</h2>
-                <div className="header-img scrollimation fade-up d1" style={{top: "140px"}}>
-                  <img className="img-responsive" src="assets/images/portfolio_headshot_header.png" alt="" />
-                </div>
-            </div>
-
-    				</div>
-
-
-
-    			</div>
-
-    		</div>
 
     		<div id="main-content">
+
+          <section id="landing-page" className="gray-bg">
+
+            <div className="container">
+              <div className="row">
+                <div className="col-sm-10 col-sm-offset-1 text-center">
+                  <h1 className="section-title scrollimation fade-down d1">Jordan England-Nelson</h1>
+                  <h2 className="scrollimation fade-down d3"><span className="main-color">W</span>eb <span className="main-color">D</span>eveloper</h2>
+                  <div className="header-img scrollimation fade-up d1" style={{top: "140px"}}>
+                    <img className="img-responsive" src="assets/images/portfolio_headshot_header.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </section>
 
 
     			{/* ==============================================
@@ -48,11 +41,10 @@ class HomePage extends React.Component {
 
     				<div className="container">
 
-    					<h1 className="section-title">Recent projects</h1>
-
         {/* Special Ed Goal Tracker */}
               <div id="iep-container">
       					<div className="row">
+                  <h1 className="section-title">Recent projects</h1>
       						<div className="col-sm-4 col-sm-offset-2 scrollimation fade-right" id="iep-description">
                 {/*Project name + description */}
                     <div className="row">
